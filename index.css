@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: hsl(0,100%,74%) url('assets/bg-intro-desktop.png');  
+    font-size: 16px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: auto;
+}
+.content .first h2 {
+    font-weight: 600;
+}
+.row form {
+    width: 90%;
+}
+.row .main {
+    margin-top: 65px;
+    padding: 10px;
+    width: 90%;
+    background: hsl(248, 32%, 49%);
+    height: auto;
+    border: 1px solid hsl(248, 32%, 49%);
+    border-radius: 8px;
+}
+.row .main .spn{
+    font-weight: 600;
+}
+.row .main{
+    font-weight: 400;
+}
+.row .second button {
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
+    background: linear-gradient(to left, transparent 50%, hsl(154, 59%, 51%) 50%);
+    transition: background-position 1s;
+    background-size: 200%;
+}
+.row .second button:hover{
+    background: #77e2b2;
+    color: white;
+}
+.second .end{
+    font-size: 10px;
+    font-weight: 600;
+}
+.second .end span{
+    color: hsl(0, 100%, 74%) ;
+    font-weight: 700;
+}
+#first-error,
+#last-error,
+#email-error,
+#password-error {
+  position: relative;
+  right: -206px;
+  top: -63px;
+  align-items: center;
+}
+.input-error {
+    border: 1px solid #ff7979;
+  }
+  input:focus {
+    border: 1px solid #5e54a4;
+    outline: none;
+  }
+#error-icon {
+    visibility: hidden;
+    margin: 0 auto;
+}
+.error {
+    display: none;
+}
+
+#first-text-error,
+#last-text-error,
+#email-text-error,
+#password-text-error {
+  font-size: 11px;
+  color:  #ff7979;
+  text-align: right;
+}
+
+@media only screen and (min-width: 1200px) {
+    .content .first {
+        padding-top: 250px;
+        letter-spacing: 0rem;
+        padding-left: 80px;
+    }
+    .content .first h2 {
+        font-size: xxx-large;
+    }
+    .content .first p {
+        padding-left: 50px;
+        letter-spacing: 0.7px;
+    }
+    .row .second{
+        padding-right: 80px;
+    }
+}
+@media only screen and (max-width: 425px) {
+    body {
+        background: url('assets/bg-intro-mobile.png');
+    }
+    .content .first {
+        padding-top: 100px;
+    }
+}
+@media screen and (max-width: 599px) {
+    main {
+      width: 540px;
+      margin-top: 65px;
+    }
+  
+    h1 {
+      font-size: 50px;
+      line-height: 55px;
+      letter-spacing: -0.52px;
+    }
+  
+    .trial-block {
+      width: 540px;
+      height: 60px;
+    }
+    .trial {
+      width: unset;
+    }
+  
+    form {
+      width: 100%;
+      min-height: 300px;
+      padding-bottom: 30px;
+    }
+  
+    .input-wrapper {
+      position: relative;
+      margin-top: 20px;
+    }
+    .input-wrapper:nth-child(1) {
+      margin-top: 40px;
+    }
+  
+    input[type="text"] {
+      width: 100%;
+    }
+   form{
+    align-items: center;
+    margin-left: 25px;
+  }
+    ::placeholder {
+      font-size: 14px;
+      letter-spacing: 0.25px;
+      color: #3d3b48;
+    }
+}  
